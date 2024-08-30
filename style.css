@@ -99,20 +99,6 @@ body {
   color: var(--red);
 }
 
-@media (max-width: 800px) {
-  body {
-    line-height: normal;
-  }
-  body .container {
-    padding: 0px;
-  }
-  body .container img {
-    border-radius: 0;
-  }
-  body .container .text-container {
-    margin: 20px;
-  }
-}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -120,4 +106,21 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 800px) {
+  body {
+    line-height: normal;
+  }
+  body .container {
+    width: 100%;
+    padding: 0px;
+    border-radius: 0;
+  }
+  body .container img {
+    border-radius: 0;
+  }
+  body .container .text-container {
+    margin: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

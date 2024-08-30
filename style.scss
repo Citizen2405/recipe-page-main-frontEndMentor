@@ -128,12 +128,18 @@ body{
     }
 }
 
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
 @media(max-width:800px){
     body{
         line-height: normal;
 
         .container{
+            width: 100%;
             padding: 0px;
+            border-radius: 0;
 
             img{
                 border-radius: 0;
@@ -146,6 +152,3 @@ body{
     }
 
 }
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
