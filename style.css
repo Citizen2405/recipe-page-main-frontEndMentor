@@ -1,0 +1,123 @@
+:root {
+  --bgcolor:#f2e5d9;
+  --textcolor:#2b2b2b;
+  --white:#ffffff;
+  --red: #82455f;
+  --light-red: #fef0f6;
+  --brown: #814c3a;
+}
+
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+body {
+  height: 100dvh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: var(--bgcolor);
+  color: var(--textcolor);
+  font-family: "Outfit", sans-serif;
+  line-height: 2rem;
+}
+
+.container {
+  background-color: var(--white);
+  width: 50%;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+.container img {
+  border-radius: 10px;
+  width: 100%;
+}
+.container h1 {
+  font-family: "Young Serif", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+.container h2 {
+  font-family: "Young Serif", serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--brown);
+}
+.container .preparation {
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: var(--light-red);
+  border-radius: 20px;
+}
+.container .preparation #preparation {
+  color: var(--red);
+  font-weight: 600;
+}
+.container .preparation .preparation-list {
+  margin: 0 20px;
+}
+.container .ingredients {
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.container .ingredients .ingredients-list {
+  margin: 0 20px;
+}
+.container .instructions {
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.container .instructions .instructions-list {
+  margin: 0 20px;
+  line-height: normal;
+}
+.container .instructions .instructions-list span {
+  font-weight: bold;
+}
+.container .nutrition {
+  padding: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.container .nutrition #nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+  align-self: center;
+}
+.container .nutrition #nutrition-table td {
+  padding: 5px 0;
+  border-bottom: 1px solid var(--textcolor);
+  padding-left: 2rem;
+  font-weight: 300;
+}
+.container .nutrition #nutrition-table #count {
+  font-weight: 600;
+  color: var(--red);
+}
+
+@media (max-width: 800px) {
+  body {
+    line-height: normal;
+  }
+  body .container {
+    padding: 0px;
+  }
+  body .container img {
+    border-radius: 0;
+  }
+  body .container .text-container {
+    margin: 20px;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
